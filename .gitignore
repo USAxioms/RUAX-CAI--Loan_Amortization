@@ -1,0 +1,20 @@
+### 3. `.gitignore`
+
+```text
+# Python bytecode, caches, and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+.Python
+
+# Dynamic runtime test results
+RESULTS.json
+
+# IDE and OS metadata
+.DS_Store
+.vscode/
+.idea/
