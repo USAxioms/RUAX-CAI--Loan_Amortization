@@ -6,21 +6,25 @@ Architecture: Russell Unified Axiomatic Stack (RUAX)
 Computational Standard: Weak Arithmetic Decidability — WAD-18
 Domain: Financial Mathematics | Loan Amortization | Computational Auditing
 
+---
+
 Executive Overview
 
 The RUAX-CAI Loan Amortization Capsule is a deterministic financial computation and verification architecture engineered to eliminate computational ambiguity in loan amortization, interest accrual, payment allocation, and outstanding-balance calculations.
 
-Built on Weak Arithmetic Decidability (WAD-18), the capsule replaces conventional floating-point computation with an 18-decimal fixed-point integer arithmetic system operating at a scale of (10^{18}). Its architecture combines exact-rational oracle comparison, invariant-based validation, automated Abstract Syntax Tree (AST) mutation testing, and cryptographic execution integrity to establish a reproducible computational foundation for financial applications.
+Built on Weak Arithmetic Decidability (WAD-18), the capsule replaces conventional floating-point computation with an 18-decimal fixed-point integer arithmetic system operating at a scale of 10¹⁸. Its architecture combines exact-rational oracle comparison, invariant-based validation, automated Abstract Syntax Tree (AST) mutation testing, and cryptographic execution integrity to establish a reproducible computational foundation for financial applications.
 
 Rather than merely calculating loan schedules, the capsule independently evaluates whether the underlying computational implementation behaves according to its specified mathematical and financial constraints.
 
 The result is a portable, auditable verification asset designed for financial software validation, institutional technology assessment, and deterministic financial computation.
 
+---
+
 Core Verification Architecture
 
 1. WAD-18 Deterministic Arithmetic Engine
 
-Implements integer-only fixed-point arithmetic using a canonical (10^{18}) scaling factor.
+Implements integer-only fixed-point arithmetic using a canonical 10¹⁸ scaling factor.
 
 - Prohibits floating-point arithmetic within the designated computational engine.
 - Enforces deterministic integer operations and explicit rounding behavior.
@@ -75,6 +79,8 @@ Verification targets include:
 - Deterministic execution and reproducibility.
 - Explicit rounding and residual-balance handling.
 
+---
+
 Capsule Architecture
 
 Component| Responsibility
@@ -82,6 +88,8 @@ Component| Responsibility
 "capsule.py"| Verification orchestration, invariant auditing, and AST mutation testing
 "GOLDEN.json"| Recorded golden verification baseline
 "MANIFEST.sha256"| Cryptographic source and artifact integrity manifest
+
+---
 
 Verification Workflow
 
@@ -102,6 +110,8 @@ Baseline Initialization
 
 python3 capsule.py --init
 
+---
+
 Intended Applications
 
 - Loan origination and servicing software.
@@ -112,6 +122,8 @@ Intended Applications
 - Automated computational integrity testing.
 - Independent software verification.
 - Reproducible financial research.
+
+---
 
 Architectural Significance
 
